@@ -1,0 +1,72 @@
+.speaking {
+  border-color:rgba(0,0,0,0) !important;
+  position:relative;
+  animation-name: speak-now;
+  animation-duration: 300ms;
+  animation-fill-mode:forwards;
+}
+
+@keyframes speak-now {
+  0% { bottom:0px; }
+  50% { bottom:10px; }
+  100% { bottom:0px; }
+}
+
+/ 頭像共通設定 /
+.avatar {
+  height:auto !important;
+  width:auto !important;
+  / 去除圓框 /
+  border-radius:0% !important;
+  / 平時亮度50%  /
+  filter: brightness(50%);
+}
+
+/ 設定發聲時的狀態 /
+.speaking {
+  / 去除外框 /
+  border-color:rgba(0,0,0,0) !important;
+  / 發聲亮度100% /
+  filter: brightness(100%);
+}
+
+/ 調整名稱標籤的顯示位置 /
+ul.voice-states { display: flex; }
+div.user{ display: none; }
+
+/ 清除滾動捲軸 /
+body { 
+  background-color: rgba(0, 0, 0, 0);
+  overflow: hidden; 
+}
+
+/ 發聲時的狀態 /
+.speaking {
+  / ... /
+  animation: speak-now 5s infinite;
+}
+
+/ 上下移動動畫 */
+@keyframes speak-now {
+  0% { bottom:0px; }
+  5% { bottom:10px; }
+  10% { bottom:0px; }
+  15% { bottom:10px; }
+  20% { bottom:0px; }
+  25% { bottom:10px; }
+  30% { bottom:0px; }
+  35% { bottom:10px; }
+  40% { bottom:0px; }
+  45% { bottom:10px; }
+  50% { bottom:0px; }
+  55% { bottom:10px; }
+  60% { bottom:0px; }
+  65% { bottom:10px; }
+  70% { bottom:0px; }
+  75% { bottom:10px; }
+  80% { bottom:0px; }
+  85% { bottom:10px; }
+  90% { bottom:0px; }
+  95% { bottom:10px; }
+  100% { bottom:0px; }
+}
